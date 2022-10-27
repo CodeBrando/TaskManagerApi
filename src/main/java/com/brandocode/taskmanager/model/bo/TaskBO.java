@@ -1,4 +1,4 @@
-package com.brandocode.hourizer.model.bo;
+package com.brandocode.taskmanager.model.bo;
 
 import lombok.*;
 

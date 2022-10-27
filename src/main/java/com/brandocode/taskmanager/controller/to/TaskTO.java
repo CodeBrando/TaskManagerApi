@@ -1,4 +1,4 @@
-package com.brandocode.hourizer.controller.to;
+package com.brandocode.taskmanager.controller.to;
 
 import lombok.Builder;
 import lombok.Data;

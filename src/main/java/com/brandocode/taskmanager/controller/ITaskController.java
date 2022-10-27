@@ -1,7 +1,7 @@
-package com.brandocode.hourizer.controller;
+package com.brandocode.taskmanager.controller;
 
-import com.brandocode.hourizer.controller.to.ResponseTO;
-import com.brandocode.hourizer.controller.to.TaskTO;
+import com.brandocode.taskmanager.controller.to.ResponseTO;
+import com.brandocode.taskmanager.controller.to.TaskTO;
 import io.swagger.annotations.ApiParam;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

@@ -1,4 +1,4 @@
-package com.brandocode.hourizer;
+package com.brandocode.taskmanager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,10 +7,10 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-public class HourizerApplication {
+public class TaskManagerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HourizerApplication.class, args);
+		SpringApplication.run(TaskManagerApplication.class, args);
 	}
 
 	@Bean

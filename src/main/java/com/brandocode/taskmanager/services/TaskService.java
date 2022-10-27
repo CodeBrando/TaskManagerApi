@@ -1,9 +1,8 @@
-package com.brandocode.hourizer.services;
+package com.brandocode.taskmanager.services;
 
-import com.brandocode.hourizer.model.bo.TaskBO;
-import com.brandocode.hourizer.model.de.TaskDE;
-import com.brandocode.hourizer.model.mappers.TaskMapper;
-import com.brandocode.hourizer.repo.ITaskRepository;
+import com.brandocode.taskmanager.model.bo.TaskBO;
+import com.brandocode.taskmanager.model.mappers.TaskMapper;
+import com.brandocode.taskmanager.repo.ITaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

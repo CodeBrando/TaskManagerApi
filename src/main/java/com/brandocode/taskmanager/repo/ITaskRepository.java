@@ -1,8 +1,7 @@
-package com.brandocode.hourizer.repo;
+package com.brandocode.taskmanager.repo;
 
-import com.brandocode.hourizer.model.de.TaskDE;
+import com.brandocode.taskmanager.model.de.TaskDE;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.scheduling.config.Task;
 
 public interface ITaskRepository extends JpaRepository<TaskDE, Long> {
     void deleteTaskById(Long id);

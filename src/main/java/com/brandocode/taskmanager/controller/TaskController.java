@@ -1,9 +1,9 @@
-package com.brandocode.hourizer.controller;
+package com.brandocode.taskmanager.controller;
 
-import com.brandocode.hourizer.controller.mappers.TaskApiMapper;
-import com.brandocode.hourizer.controller.to.ResponseTO;
-import com.brandocode.hourizer.controller.to.TaskTO;
-import com.brandocode.hourizer.services.TaskService;
+import com.brandocode.taskmanager.controller.mappers.TaskApiMapper;
+import com.brandocode.taskmanager.controller.to.ResponseTO;
+import com.brandocode.taskmanager.controller.to.TaskTO;
+import com.brandocode.taskmanager.services.TaskService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

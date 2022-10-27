@@ -1,4 +1,4 @@
-package com.brandocode.hourizer.model.de;
+package com.brandocode.taskmanager.model.de;
 
 
 import lombok.AllArgsConstructor;

@@ -1,10 +1,10 @@
-package com.brandocode.hourizer;
+package com.brandocode.taskmanager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HourizerApplicationTests {
+class TaskManagerApplicationTests {
 
 	@Test
 	void contextLoads() {

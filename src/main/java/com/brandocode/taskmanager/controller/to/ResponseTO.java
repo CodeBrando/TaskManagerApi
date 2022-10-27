@@ -1,11 +1,9 @@
-package com.brandocode.hourizer.controller.to;
+package com.brandocode.taskmanager.controller.to;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.validation.constraints.NotNull;
 
 @Data
 @NoArgsConstructor

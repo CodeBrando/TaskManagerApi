@@ -1,7 +1,7 @@
-package com.brandocode.hourizer.model.mappers;
+package com.brandocode.taskmanager.model.mappers;
 
-import com.brandocode.hourizer.model.bo.TaskBO;
-import com.brandocode.hourizer.model.de.TaskDE;
+import com.brandocode.taskmanager.model.bo.TaskBO;
+import com.brandocode.taskmanager.model.de.TaskDE;
 
 import java.util.ArrayList;
 import java.util.List;

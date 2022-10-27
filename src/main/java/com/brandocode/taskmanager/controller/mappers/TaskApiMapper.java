@@ -1,10 +1,8 @@
-package com.brandocode.hourizer.controller.mappers;
+package com.brandocode.taskmanager.controller.mappers;
 
 
-import com.brandocode.hourizer.controller.to.TaskTO;
-import com.brandocode.hourizer.model.bo.TaskBO;
-import com.brandocode.hourizer.model.mappers.TaskMapper;
-import org.springframework.scheduling.config.Task;
+import com.brandocode.taskmanager.controller.to.TaskTO;
+import com.brandocode.taskmanager.model.bo.TaskBO;
 
 import java.util.ArrayList;
 import java.util.List;
