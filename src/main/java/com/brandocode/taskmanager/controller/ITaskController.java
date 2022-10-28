@@ -7,6 +7,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -32,7 +33,8 @@ public interface ITaskController {
     })
     @Operation(summary = "Creates a new task")
     @PostMapping( consumes = APPLICATION_JSON, produces = APPLICATION_JSON)
-    ResponseEntity<ResponseTO> createTask(@ApiParam(value = "Task to create", required = true) @Valid @RequestBody TaskTO task);
+    ResponseEntity<ResponseTO> createTask(@ApiParam(value = "Task to create", required = true)
+                                          @Valid @RequestBody TaskTO task);
 
     @ApiResponses(value={
             @ApiResponse(responseCode = "202", description = "Updated"),
@@ -40,14 +42,16 @@ public interface ITaskController {
             @ApiResponse(responseCode = "500", description = "Internal Server error")
     })
     @Operation(summary = "Updates an existing task")
-    @PutMapping(value = "/update", consumes = APPLICATION_JSON, produces = APPLICATION_JSON)
-    ResponseEntity<ResponseTO> updateTask(@ApiParam(value = "Task to update", required = true) @Valid @RequestBody TaskTO task);
+    @PutMapping(value = "/update/{id}", consumes = APPLICATION_JSON, produces = APPLICATION_JSON)
+    ResponseEntity<ResponseTO> updateTask(@ApiParam(value = "Task to update", required = true)
+                                          @PathVariable("id") Long id, @Valid @RequestBody TaskTO task);
 
     @ApiResponses(value={
             @ApiResponse(responseCode = "202", description = "Deleted"),
             @ApiResponse(responseCode = "400", description = "Bad request"),
             @ApiResponse(responseCode = "500", description = "Internal Server error")
     })
+    @Transactional
     @Operation(summary = "Deletes an existing task")
     @DeleteMapping(value = "/delete/{id}")
     ResponseEntity<?> deleteTask(@ApiParam(value = "Task to delete") @PathVariable("id") Long id);

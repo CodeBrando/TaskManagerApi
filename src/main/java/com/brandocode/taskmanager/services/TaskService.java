@@ -19,7 +19,8 @@ public class TaskService {
         repository.save(TaskMapper.convertBOToDE(taskBO));
     }
 
-    public void updateTask(TaskBO taskToUpdate){
+    public void updateTask(Long id, TaskBO taskToUpdate){
+        taskToUpdate.setId(id);
         repository.save(TaskMapper.convertBOToDE(taskToUpdate));
     }
 

@@ -37,11 +37,11 @@ public class TaskController implements ITaskController{
     }
 
     @Override
-    public ResponseEntity<ResponseTO> updateTask(TaskTO taskTO){
+    public ResponseEntity<ResponseTO> updateTask(Long id, TaskTO taskTO){
         log.info("STARTING TO UPDATE TASK...");
         ResponseEntity<ResponseTO> response;
         try{
-            taskService.updateTask(TaskApiMapper.convertTOToBO(taskTO));
+            taskService.updateTask(id, TaskApiMapper.convertTOToBO(taskTO));
             response = new ResponseEntity<>(ResponseTO.builder().message(HttpStatus.OK.name()).build(), HttpStatus.OK);
             log.info("TASK SUCCESSFULLY UPDATED");
         } catch (EntityNotFoundException | EntityExistsException e){
